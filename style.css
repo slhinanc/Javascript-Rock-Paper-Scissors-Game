@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Birthstone&family=Caramel&family=Charm:wght@700&family=Chivo+Mono&family=Dancing+Script:wght@500&family=Josefin+Sans&family=Orbitron&family=Pacifico&family=Petit+Formal+Script&family=Poppins&family=Prosto+One&family=Righteous&family=Roboto:wght@400;500&family=Rubik&family=Source+Sans+Pro&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Birthstone&family=Caramel&family=Charm:wght@700&family=Chivo+Mono&family=Dancing+Script:wght@500&family=Josefin+Sans&family=Orbitron&family=Pacifico&family=Petit+Formal+Script&family=Poppins&family=Press+Start+2P&family=Prosto+One&family=Righteous&family=Roboto:wght@400;500&family=Rubik&family=Source+Sans+Pro&family=Unbounded&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin Sans;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(./pictures/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+#container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-radius: 5rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1rem);
+}
+.title{
+    color: gray;
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem;
+    font-weight: bolder;
+    text-shadow: -1px -1px black, 1px 1px white;
+    font-family: 'Press Start 2p';
+}
+
+#container > img{
+    flex: 1 1 10rem;
+    max-width: 20%;
+    border-radius: 20px;
+}
+
+#container > img:active{
+    box-shadow: none;
+	position: relative;
+	top: .9em;
+}
+
+button{
+    margin: 1rem;
+}
+
+.win{
+    color:rgb(0, 255, 34);
+    font-size: 4rem;
+    font-family: 'Press Start 2p';
+    text-shadow: -1px -1px black, 1px 1px white;
+}
+
+.lose{
+    color:red;
+    font-size: 4rem;
+    font-family: 'Press Start 2p';
+    text-shadow: -1px -1px black, 1px 1px white;
+}
+
+.draw{
+    color:rgb(47, 0, 255);
+    font-size: 4rem;
+    font-family: 'Press Start 2p';
+    text-shadow: -1px -1px black, 1px 1px white;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#play{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+	display: inline-block;
+    font-weight: bold;
+    padding: 20px 50px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    font-family: 'Press Start 2p';
+}
+
+#play:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+#reset{
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+	display: inline-block;
+    font-weight: lighter;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0);
+    text-shadow: -1px -1px rgb(244, 244, 71), 1px rgb(138, 138, 135);
+    color: rgb(113, 113, 110);
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em rgb(157, 157, 155); 
+    cursor: pointer;
+    font-family: 'Press Start 2p';
+}
+
+#reset:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+#scores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userScore, .computerScore{
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    margin: 20px 100px;
+    border-radius: 20px;
+}
+
+.userScore h3, .computerScore h3{
+    font-size: 25px;
+    padding: 15px 15px;
+    font-family: 'Press Start 2p';
+}
+
+#userScore_point, #computerScore_point{
+    font-size: 50px;
+    font-family: 'Press Start 2p';
+    color:rgb(0, 255, 34);
+}
+
+
+
+
+
